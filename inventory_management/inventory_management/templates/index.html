@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h2>Home Page</h2>
+	<p>Welcome to Online Inventory Management System, {% if user.is_authenticated%} {{ user.username }} {% else %} Visitor {% endif %}</p>
+	<p>
+		<strong>Total User Register : </strong> {{ count }}
+	</p>
+{% endblock %}
